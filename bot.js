@@ -184,7 +184,17 @@ client.on('interactionCreate', async interaction => {
 });
 
 
-client.login(process.env.TOKEN);
+const token = process.env.TOKEN;
+
+// Перевірка токена
+if (!token) {
+  console.error('❌ Токен не знайдено! Додайте його в Environment Variables на Render.');
+  process.exit(1);
+}
+
+
+// Логін бота
+client.login(token);
 const express = require("express");
 const app = express();
 
