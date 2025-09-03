@@ -1,10 +1,11 @@
 {
-  "name": "rustbot",
+  "name": "discord-bot",
   "version": "1.0.0",
-  "description": "Discord Rust Bot",
+  "description": "My Discord bot",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node bot.js",
+    "server": "node server.js"
   },
   "dependencies": {
     "discord.js": "^14.15.3",
