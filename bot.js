@@ -184,7 +184,7 @@ client.on('interactionCreate', async interaction => {
 });
 
 
-client.login("MTQwODAyNjMwMDU2Mzg0OTMzNw.GRs9Em.V4WcKOA6Aiy5gcIB9BnbM1U-S_pocMG5kFkF9A");
+client.login(process.env.TOKEN);
 const express = require("express");
 const app = express();
 
